@@ -1,0 +1,63 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title this is my title 
+        style 
+            include ../static/style1.css
+        link(rel="preconnect" href="https://fonts.googleapis.com" )
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet")
+    body 
+        nav#navbar  
+            ul
+                div#logo
+                    img(src="/static/img1.png")
+                    | VDA
+                li #[a(href="/") Home ]
+                li #[a(href="/") Services] 
+                li #[a(href="/") Class Info]
+                li #[a(href="/") About Us ]
+                li #[a(href="/") Conatct Us] 
+        section#introSection
+            div Welcome to Vaibhav's Dance Academy
+            div.small Eat Sleep Dance Repeat
+        section#missionSection
+            h2 Our Mission
+            div.card
+                h3 Dance Perfection
+                div.card-box
+                    div.card-img
+                        img(src="../static/img1.png")
+                    div.card-content
+                        p This is the best dance academy of the universe
+        
+        
+
+            div.card
+                h3 Dance the way you like
+                div.card-box
+                    div.card-img
+                        img(src="../static/img2.jpg")
+                    div.card-content
+                        p This is the best dance academy of the universe
+
+            div.card
+                h3 Expert Teaching
+                div.card-box
+                    div.card-img
+                        img(src="../static/img3.jpg")
+
+                    div.card-content
+                       p This is the best dance academy of the universe
+        section#sponsorsSection
+           h2 Our Sponsors
+           img(src="/static/apple.png", alt="sponser img", Class="SpImage")
+           img(src="/static/skype.png", alt="sponser img", Class="SpImage")
+           img(src="/static/hp.jpg", alt="sponser img", Class="SpImage")
+           img(src="/static/microsoft.jpg", alt="sponser img", Class="SpImage")
+        
+        footer#footer
+            | our footer here
+    script ../static/index.js 

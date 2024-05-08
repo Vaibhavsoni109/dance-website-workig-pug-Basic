@@ -1,0 +1,25 @@
+doctype doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Harry dance website 
+        block scripts
+        block style 
+            style 
+                include ../static/style1.css
+    body 
+        nav#navbar  
+            ul
+                div#logo
+                    img(src="/static/img1.png")
+                    | VDA
+                li #[a(href="/") Home ]
+                li #[a(href="/") Services] 
+                li #[a(href="/") Class Info]
+                li #[a(href="/") About Us ]
+                li #[a(href="/contact") Conatct Us] 
+        block content
+        block foot
+        footer#footer
+            | copy2
